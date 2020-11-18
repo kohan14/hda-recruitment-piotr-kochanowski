@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/kohan14/hda-recruitment-piotr-kochanowski/issues"
   },
-  "homepage": "https://github.com/kohan14/hda-recruitment-piotr-kochanowski#readme"
+  "homepage": "https://github.com/kohan14/hda-recruitment-piotr-kochanowski#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
 }

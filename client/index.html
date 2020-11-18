@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p-kochanowski-hda-recruitment-app</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="module" src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="center-text">HDA-Recruitment App by Piotr Kochanowski</h1>
+    </header>
+
+    <div class="container">
+      <section class="search-wrapper">
+        <label for="search">Search</label>
+        <input name="search" type="text" />
+      </section>
+      <section class="form-wrapper">
+        <form id="add-form" class="add-form">
+            <div class="name-field">
+                <label for="name">Name:</label>
+                <input name="name" maxlength="20" type="text" />    
+            </div>
+            <div class="age-field">
+                <label for="age">Age:</label>
+                <input name="age" max="150" type="number" />
+            </div>
+          <button type="submit">Add</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

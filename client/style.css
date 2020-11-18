@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.center-text {
+  text-align: center;
+}
+.search-wrapper, .form-wrapper{
+    padding:1rem;
+}
+.search-wrapper{
+    background: gray;
+}
+.form-wrapper{
+    background: rgb(251, 244, 173);
+    margin-left:1rem;
+}
+.add-form{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+.name-field, .age-field {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:1rem;
+}
