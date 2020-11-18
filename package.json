@@ -1,0 +1,19 @@
+{
+  "name": "hda_recruitment_piotr_kochanowski",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kohan14/hda-recruitment-piotr-kochanowski.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kohan14/hda-recruitment-piotr-kochanowski/issues"
+  },
+  "homepage": "https://github.com/kohan14/hda-recruitment-piotr-kochanowski#readme"
+}
