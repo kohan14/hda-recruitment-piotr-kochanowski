@@ -31,7 +31,7 @@ Project is created with:
 * Styling: CSS
 	
 ## Setup
-To run this project copy my repository and use
+To run this project, copy my repository and use
 ```
 node index.js
 ```
