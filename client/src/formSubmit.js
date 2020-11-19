@@ -1,30 +1,24 @@
-const submitForm = (e, form) => {
+import { generateAlert } from './alert.js';
+import { sendForm } from './api.js';
+import { checkFieldsFilled, inputElementsToData } from './helperFunctions.js';
+
+const onFormSubmit = (e, form) => {
   e.preventDefault();
   console.log('CLIENT: Started submitting data');
+
   const inputs = form.querySelectorAll('input');
+  const data = inputElementsToData(inputs);
 
-  //Transform NodeList into array and reduce all inputs with their values into single data object
-  const data = [...inputs].reduce((acc, curr, index) => {
-    if (index !== 1) {
-      return { ...acc, [curr.name]: curr.value };
-    } else {
-      return { [acc.name]: acc.value, [curr.name]: curr.value };
-    }
-  });
-  formValidate(data);
-};
-
-const formValidate = data => {
-  for (const input in data){
-    console.log(input)
-    if(!data[input]){
-      console.log('something is no yes');
-      return false
-    }else{
-      console.log('passed');
-    }
+  //Validate and send request
+  if (!checkFieldsFilled(data)) {
+    generateAlert('error', 'Check fields for any mistakes');
+    console.log('CLIENT: Something went wrong, request not sent');
+  } else {
+    sendForm(data).then(() => {
+      generateAlert('success', 'Successfully added to DB !');
+      console.log('CLIENT: Data successfully posted to BE');
+    });
   }
-  return true;
 };
 
-export default submitForm;
+export default onFormSubmit;

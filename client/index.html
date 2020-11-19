@@ -13,20 +13,24 @@
     </header>
 
     <div class="container">
+      <div id="alerts"></div>
       <section class="search-wrapper">
         <label for="search">Search</label>
-        <input name="search" type="text" />
+        <input name="search" id="search-bar" type="text" />
+        <div class="search-container">
+          <ul class="search-results"></ul>
+        </div>
       </section>
       <section class="form-wrapper">
         <form id="add-form" class="add-form">
-            <div class="name-field">
-                <label for="name">Name:</label>
-                <input name="name" maxlength="20" type="text" />    
-            </div>
-            <div class="age-field">
-                <label for="age">Age:</label>
-                <input name="age" max="150" type="number" />
-            </div>
+          <div class="name-field">
+            <label for="name">Name:</label>
+            <input name="name" maxlength="20" type="name" pattern="[a-zA-Z]*" />
+          </div>
+          <div class="age-field">
+            <label for="age">Age:</label>
+            <input name="age" max="150" type="number" />
+          </div>
           <button type="submit">Add</button>
         </form>
       </section>

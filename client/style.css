@@ -20,7 +20,6 @@ body {
 }
 .form-wrapper{
     background: rgb(251, 244, 173);
-    margin-left:1rem;
 }
 .add-form{
     display:flex;
@@ -31,4 +30,27 @@ body {
     display:flex;
     justify-content: space-between;
     margin-bottom:1rem;
+}
+#alerts{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+.error-popup, .success-popup{
+  padding:1rem;
+}
+.error-popup{
+  background-color: red;
+}
+.success-popup{
+  background-color: green;
+}
+.search-container{
+  background-color: rgb(170, 170, 195);
+}
+
+@media (max-width: 600px){
+  .container{
+    flex-direction: column;
+  }
 }
