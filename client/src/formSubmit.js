@@ -17,6 +17,7 @@ const onFormSubmit = (e, form) => {
     sendForm(data).then(() => {
       generateAlert('success', 'Successfully added to DB !');
       console.log('CLIENT: Data successfully posted to BE');
+      inputs.forEach(input => (input.value = ''));
     });
   }
 };
